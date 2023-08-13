@@ -8,7 +8,7 @@ function InputForm(props) {
   
   const fetchData =  (e) =>{
     if(e.key === 'Enter'){
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${place}&appid=f0ba153c6ed888e6b3b95c452616b1d0`)
+        axios.get(`apiURL${place}apiCode`)
         .then(res =>  props.changeData(res.data)  )
         .catch(err => {
             if(err.message === 'Network Error')
