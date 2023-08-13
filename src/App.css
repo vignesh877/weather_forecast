@@ -1,0 +1,78 @@
+.App {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.inpt{
+  text-align: center;
+  padding-top: 6rem;
+}
+input{
+  padding: .7rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: rgba(255 , 255 , 255 , 0.5);
+}
+
+.contain{
+ width: 90%; 
+ margin: 50px 5pxo;
+ display: flex;
+ flex-direction: row;
+}
+.chart{
+  width : 85%;
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 7rem ;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  transition: width 2s;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  width: 30px;
+  padding-right: .5rem;
+
+}
+.cardOuter{
+  width: 70%;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  transition: width 2s;
+  display: flex;
+  overflow: wrap;
+  flex-direction: row;
+}
+
+.card1{
+  width: 18rem;
+  display: flex;
+  justify-content: space-evenly;
+  transition: width 1s ease-in-out;
+
+}
+.para{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.cardOuter:hover{
+  transform: scale(1.1);
+  .card1{
+    transform: scale(.8);
+  } 
+}
